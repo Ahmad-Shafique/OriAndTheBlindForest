@@ -1,0 +1,28 @@
+﻿<Window x:Class="OriAndTheBlindForest.Views.Expenses.AddExpense"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OriAndTheBlindForest.Views.Expenses"
+        mc:Ignorable="d"
+        Title="AddExpense" Height="450" Width="800">
+    <Grid>
+        <Label Content="Expense Type" HorizontalAlignment="Left" Height="27" Margin="47,29,0,0" VerticalAlignment="Top" Width="105"/>
+        <ComboBox HorizontalAlignment="Left" Height="27" Margin="157,29,0,0" VerticalAlignment="Top" Width="138">
+            <ComboBoxItem Content="Visa Expense" HorizontalAlignment="Left" Width="136"/>
+            <ComboBoxItem Content="Staff Expense" HorizontalAlignment="Left" Width="136"/>
+            <ComboBoxItem Content="Operating Expense" HorizontalAlignment="Left" Width="136"/>
+            <ComboBoxItem Content="Supplies Expense" HorizontalAlignment="Left" Width="136"/>
+        </ComboBox>
+        <Label Content="Date" HorizontalAlignment="Left" Height="27" Margin="47,76,0,0" VerticalAlignment="Top" Width="105"/>
+        <DatePicker HorizontalAlignment="Left" Height="27" Margin="157,76,0,0" VerticalAlignment="Top" Width="138"/>
+        <Label Content="Description" HorizontalAlignment="Left" Height="27" Margin="47,122,0,0" VerticalAlignment="Top" Width="105"/>
+        <TextBox HorizontalAlignment="Left" Height="105" Margin="157,122,0,0" TextWrapping="Wrap" Text="Some description of the expense type" VerticalAlignment="Top" Width="385"/>
+        <Label Content="Amount" HorizontalAlignment="Left" Height="27" Margin="47,252,0,0" VerticalAlignment="Top" Width="105"/>
+        <TextBox HorizontalAlignment="Left" Height="27" Margin="157,252,0,0" TextWrapping="Wrap" Text="80" VerticalAlignment="Top" Width="138"/>
+        <Button Name="saveExpenseButton" Content="Save the Expense" HorizontalAlignment="Left" Height="51" Margin="47,328,0,0" VerticalAlignment="Top" Width="248"/>
+        <Button Name="backToExpensePage" Content="Go back to expense page" HorizontalAlignment="Left" Height="51" Margin="317,328,0,0" VerticalAlignment="Top" Width="183" Click="backToExpensePage_Click"/>
+        <Button x:Name="naruSwitch" Content="Switch to Naru" HorizontalAlignment="Left" Height="48" Margin="518,10,0,0" VerticalAlignment="Top" Width="245"/>
+
+    </Grid>
+</Window>
